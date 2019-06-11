@@ -11,10 +11,10 @@ public class ImageViewer
 {
 	public static void main(String[] args)
 	{
-		EventQueue.invokeLater(() ->{
+		EventQueue.invokeLater(() -> {
 			JFrame frame = new ImageViewerFrame();
 			frame.setTitle("ImageViewer");
-			frame.setDefaultCloseOperationK(JFrame.EXIT_ON_CLOSE);L
+			frame.setDefaultCloseOperationK(JFrame.EXIT_ON_CLOSE);
 			frame.setVisible(true);
 		});
 	}
@@ -61,6 +61,6 @@ class ImageViewerFrame extends JFrame
 	
 		JMenuItem exitItem = new JMenuItem("Exit");
 		menu.add(exitItem);
-		exitItem.addActionListener(evert -> System.exit(0));
+		exitItem.addActionListener(event -> System.exit(0));
 	}
 }
