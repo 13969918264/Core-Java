@@ -1,4 +1,4 @@
-/**
+cd/**
  *  姓名：赵子豪
  *  日期：2019年8月14日
  *  This program demonstrates console input
@@ -8,7 +8,7 @@ import java.util.*;
 
 public class InputTest 
 {
-    public static void main (String[] args)
+    public static void main(String[] args)
     {
         Scanner in = new Scanner(System.in);
 
