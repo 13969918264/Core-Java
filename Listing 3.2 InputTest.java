@@ -1,4 +1,4 @@
-cd/**
+/**
  *  姓名：赵子豪
  *  日期：2019年8月14日
  *  This program demonstrates console input
