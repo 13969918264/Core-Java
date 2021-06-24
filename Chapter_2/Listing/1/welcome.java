@@ -2,7 +2,7 @@
  * This program displays a greeting for the reader
  * @version 1.8_121
  * @date  2019-06-08
- * @author Х╣╣Е╜░Х╠╙ 
+ * @author утвс╨ю 
  */
 public class welcome{
 	public static void main(String[] args)
