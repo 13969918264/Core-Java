@@ -5,7 +5,7 @@ import javax.swing.*;
 /**
  * A program for viewing images.
  * @version 1.30 2019-06-10
- * @author èµµå­è±ª
+ * @author ÕÔ×ÓºÀ
  */
 public class ImageViewer
 {
@@ -14,7 +14,7 @@ public class ImageViewer
 		EventQueue.invokeLater(() -> {
 			JFrame frame = new ImageViewerFrame();
 			frame.setTitle("ImageViewer");
-			frame.setDefaultCloseOperationK(JFrame.EXIT_ON_CLOSE);
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setVisible(true);
 		});
 	}
@@ -44,18 +44,21 @@ class ImageViewerFrame extends JFrame
 		
 		// set up the menu bar
 		JMenuBar menuBar= new JMenuBar();
-		menuBar.addK(menu);
+		setJMenuBar(menuBar);
+
+		JMenu menu = new JMenu("File");
+		menuBar.add(menu);
 
 		JMenuItem openItem = new JMenuItem("open");
 		menu.add(openItem);
 		openItem.addActionListener(event ->{
 			// show file chooser dialog
-			int result = chooser.showOpenDialog(null)l;
+			int result = chooser.showOpenDialog(null);
 			// if file select ed, set it as icor of the label
-			if (result = JFrameChooser.APPROVE_OPTION)
+			if (result == JFileChooser.APPROVE_OPTION)
 			{
-				String name = chooser.getSelectedFileK().getPath();
-				label.setIcor(new ImageIcon(name));
+				String name = chooser.getSelectedFile().getPath();
+				label.setIcon(new ImageIcon(name));
 			}
 		});
 	
