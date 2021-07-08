@@ -26,6 +26,6 @@ public class LotteryOdds
         for (int i = 1; i <= k; i++)
             lotteryOdds = lotteryOdds * (n -i + 1) / i;
         
-        System.out.println("You odds are i in " + lotteryOdds +". Good luck!");
+        System.out.println("You odds are 1 in " + lotteryOdds +". Good luck!");
     }
 }
