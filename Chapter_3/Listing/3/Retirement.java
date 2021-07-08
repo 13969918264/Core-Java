@@ -30,9 +30,10 @@
             //  add this year's payment and interestRate
             balance += payment;
             double interest = balance * interestRate / 100;
+            balance += interest;
             years++; 
         }
 
-        System.out.println("You can retire in " + years + "years.");
+        System.out.println("You can retire in " + years + " years.");
     }
  }
